@@ -17,7 +17,6 @@ var indexRoute = require('./routes/index');
 var authRoute = require('./routes/auth');
 var taskRoute = require('./routes/task');
 
-
 mongoose.connect(config.dbConnstring);
 global.User = require('./models/user');
 global.Task = require('./models/task');
@@ -39,7 +38,7 @@ app.use(cookieParser());
 app.use(session({
     secret: config.sessionKey,
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: true
 }));
 
 app.use(passport.initialize());
@@ -57,7 +56,6 @@ app.use(function(req, res, next) {
 app.use('/', indexRoute);
 app.use('/', authRoute);
 app.use('/', taskRoute);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

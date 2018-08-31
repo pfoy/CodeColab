@@ -33,7 +33,7 @@
           </span>
         </div>
         <div class="panel-body">
-          <ul class="media-list" style="height: 100px; overflow-y: scroll" id="chatbox-listMessages">
+          <ul class="media-list" style="heigh: 300px; overflow-y: scroll" id="chatbox-listMessages">
 
           </ul>
         </div>
@@ -47,6 +47,8 @@
         </div>
       </div>
 
+
+
     </div>
   </div>
 </div>
@@ -57,7 +59,7 @@
 
 <script src="/plugins/ot/ot.js"></script>
 <script src="/socket.io/socket.io.js"></script>
-<script src="https://rocky-depths-74216.herokuapp.com/peer/peer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.16/peer.min.js"></script>
 
 <script>
   var EditorClient = ot.EditorClient;
@@ -119,12 +121,10 @@
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
     // PeerJS object
     var peer = new Peer(username + roomId, {
-      host: 'rocky-depths-74216.herokuapp.com',
-      path: '/peerjs',
+      host: 'peerjs-server.herokuapp.com',
       port: 443,
-      secure: true,
-      key: 'code4startup',
-      debug: true
+      key: 'peerjs',
+      debug: 3
     });
 
     peer.on('open', function(){

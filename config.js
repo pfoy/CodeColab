@@ -8,6 +8,6 @@ module.exports = {
       pass: 'EDWARD_15'
     }
   },
-  dbConnstring: 'mongodb://admin:edward_15@ds237832.mlab.com:37832/codecolab',
+  dbConnstring: 'mongodb://127.0.0.1:27017/codeshare',
   sessionKey: 'HaloCode4Share'
 }
