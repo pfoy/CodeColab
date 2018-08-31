@@ -120,7 +120,10 @@
   // Compatibility shim
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
     // PeerJS object
-    var peer = new Peer(username + roomId, {key: 't9tfmg8kq39s5rk9'});
+    host: 'codecolab-app.herokuapp.com.herokuapp.com',
+    port: 443,
+    secure: true,
+  });
 
     peer.on('open', function(){
       $('#my-id').text(peer.id);
