@@ -4,10 +4,10 @@ module.exports = {
   mailer: {
     service: 'Gmail',
     auth: {
-      user: 'peter.foy5@gmail.com',
-      pass: 'EDWARD_15'
+      //user: 'email',
+      //pass: 'password'
     }
   },
-  dbConnstring: 'mongodb://127.0.0.1:27017/codeshare',
+  dbConnstring: 'mongodb://codecolab:abc123@ds137812.mlab.com:37812/codecolab',
   sessionKey: 'HaloCode4Share'
 }

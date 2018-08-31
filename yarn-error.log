@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js add mongoose
+
+PATH: 
+  /anaconda3/bin:/Users/peter/miniconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin/
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.11.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:50:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+
+npm manifest: 
+  {
+    "name": "codecolab",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.6.9",
+      "express": "~4.16.0",
+      "express-session": "^1.15.1",
+      "express-validator": "^3.1.2",
+      "hbs": "~4.0.1",
+      "http-errors": "~1.6.2",
+      "morgan": "~1.9.0",
+      "nodemailer": "^3.1.5",
+      "ot": "git+https://github.com/Operational-Transformation/ot.js.git",
+      "passport": "^0.3.2",
+      "passport-facebook": "^2.1.1",
+      "passport-local": "^1.0.0",
+      "socket.io": "^1.7.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
