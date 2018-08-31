@@ -17,7 +17,6 @@ var indexRoute = require('./routes/index');
 var authRoute = require('./routes/auth');
 var taskRoute = require('./routes/task');
 
-console.log(config.dbConnstring);
 mongoose.connect(config.dbConnstring);
 global.User = require('./models/user');
 global.Task = require('./models/task');
